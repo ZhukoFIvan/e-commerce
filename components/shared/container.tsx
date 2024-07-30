@@ -9,7 +9,6 @@ interface IContainer {
 const Container: FC<IContainer> = ({ children, className }) => {
 	return (
 		<div className={cn('mx-auto max-w-[1280px] ', className)}>{children}</div>
-
 	)
 }
 
