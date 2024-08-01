@@ -1,14 +1,16 @@
 import { FC } from 'react'
 import Categories from './categories'
-import SortPopup from './sort-popup'
 import { Container } from './container'
+import SortPopup from './sort-popup'
 
 const TopBar: FC = () => {
 	return (
-		<Container className='flex items-center justify-between my-10 sticky top-0 shadow-lg shadow-black/5 '>
-			<Categories />
-			<SortPopup />
-		</Container>
+		<div className='shadow-xl shadow-black/5 z-10 bg-white py-3 w-full my-10 sticky top-0'>
+			<Container className='flex items-center justify-between  	 '>
+				<Categories />
+				<SortPopup />
+			</Container>
+		</div>
 	)
 }
 

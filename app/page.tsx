@@ -1,5 +1,6 @@
 import { Container } from '@/components/shared/container'
 import Filters from '@/components/shared/filters'
+import ProductList from '@/components/shared/product-list'
 import { Title } from '@/components/shared/title'
 import TopBar from '@/components/shared/topbar'
 import { FC } from 'react'
@@ -16,7 +17,9 @@ const Home: FC = () => {
 					<Filters />
 				</div>
 				<div>
-					content
+					<ProductList categoryId={1} title='Iphones' items={[]} />
+					<ProductList categoryId={1} title='Iphones' items={[]} />
+					<ProductList categoryId={1} title='Iphones' items={[]} />
 				</div>
 			</Container>
 		</>
